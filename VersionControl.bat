@@ -1,6 +1,6 @@
 @echo off
 cd %~dp0
-if [%~2] != [] goto arg
+if not [%~2] == [] goto arg
 :returnarg
 git sync
 git add -A
